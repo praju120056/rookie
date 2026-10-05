@@ -1,0 +1,8 @@
+model: gemma3:4b            # try gemma3:12b if your laptop has 16 GB+ RAM or a GPU
+ollama_host: null           # null = http://localhost:11434
+goal: Order a Margherita pizza
+success_text: Order placed  # text on screen that proves the goal is complete
+personas: [arjun, kamala, ravi]
+max_steps: 15
+demo_folder: demo_app
+demo_port: 8765

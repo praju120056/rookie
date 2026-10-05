@@ -1,0 +1,8 @@
+name: Meena
+age: 30
+color: amber
+about: >
+  A 30-year-old nurse ordering food on a slow 2G connection during a night shift.
+  She is busy and has little patience for pages that take long to load.
+patience: 3
+slow_network: true

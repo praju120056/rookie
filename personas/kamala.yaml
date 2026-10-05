@@ -1,0 +1,13 @@
+name: Kamala
+age: 65
+color: amber
+about: >
+  A 65-year-old retired teacher who got her first smartphone last month. Her eyesight is
+  weak. She only taps things that clearly say what they do in words, never small symbols
+  or icons, and doesn't scroll or swipe. She gets nervous and gives up after a few taps
+  that don't seem to work.
+actions: [tap, type, back, wait, done, give_up]
+patience: 3
+blur: 2.5
+min_font_px: 13
+hide_icon_only: true

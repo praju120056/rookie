@@ -1,0 +1,14 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>PizzaPal</title><link rel="stylesheet" href="style.css"></head><body>
+<header><a class="brand" href="index.html">PizzaPal</a><a class="cart" href="cart.html" aria-label="Cart / कार्ट"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#333" stroke-width="2"><path d="M6 7h12l-1 13H7L6 7z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg></a></header>
+<main>
+<h1>Payment</h1>
+<p class="sub">Select a payment method to complete your order</p>
+<label class="opt"><input type="radio" name="m" value="upi"> UPI</label>
+<label class="opt"><input type="radio" name="m" value="card"> Credit or debit card</label>
+<label class="opt"><input type="radio" name="m" value="cod"> Cash on delivery</label>
+<button class="btn" id="place">Place order</button>
+<p class="fine">By placing this order you agree to the terms of service.</p>
+</main>
+<script>
+document.getElementById("place").onclick=()=>{if(!document.querySelector("input[name=m]:checked")){alert("Please select a payment method");return;}localStorage.removeItem("cart");location.href="done.html";};
+</script></body></html>

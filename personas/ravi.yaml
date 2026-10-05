@@ -1,0 +1,9 @@
+name: Ravi
+age: 38
+color: red
+about: >
+  A 38-year-old shop owner in Lucknow. He reads and speaks only Hindi and cannot read
+  English at all. He will not tap a button about money or payment unless he can read
+  what it says, because he is afraid of being charged wrongly.
+patience: 3
+reads_only_hindi: true

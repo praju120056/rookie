@@ -1,0 +1,48 @@
+/* Rookie UI tokens: same as the pitch deck. Flat, sharp, one teal accent. */
+:root {
+  --bg: #0D0D0F; --panel: #141416; --panel-2: #1F1F23; --rule: #2A2A2F;
+  --dim: #505058; --muted: #A0A0A8; --text: #F2F2F0;
+  --teal: #00C2A8; --teal-bg: #0A1F1D; --red: #FF8080; --red-bg: #1F0808; --red-line: #4D1515; --amber: #F5A623;
+  --serif: Georgia, "Times New Roman", serif;
+  --sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --mono: "Courier New", Courier, monospace;
+}
+#MainMenu, header[data-testid="stHeader"], footer, [data-testid="stToolbar"] { display: none !important; }
+.stApp, [data-testid="stAppViewContainer"] { background: var(--bg); color: var(--text); font-family: var(--sans); }
+[data-testid="stSidebar"] { background: var(--panel); border-right: 1px solid var(--rule); }
+.block-container { padding-top: 2.2rem; max-width: 1280px; }
+* { border-radius: 0 !important; }
+
+.eyebrow { font-family: var(--mono); font-size: 11px; letter-spacing: .25em; color: var(--teal); text-transform: uppercase; }
+.headline { font-family: var(--serif) !important; font-weight: 400 !important; font-size: 40px !important; color: var(--text) !important; margin: 6px 0 2px !important; padding: 0 !important; }
+.sub-italic { font-family: var(--serif); font-style: italic; color: var(--teal); font-size: 22px; margin-bottom: 26px; }
+.muted { color: var(--muted); }
+.side-title { font-family: var(--serif); font-size: 24px; margin: 4px 0 10px; }
+
+.cards { display: grid; grid-template-columns: repeat(5, 1fr); gap: 14px; margin-bottom: 28px; }
+.card { background: var(--panel); border: 1px solid var(--rule); padding: 14px 16px; }
+.card.hi { border-color: var(--teal); }
+.card .num { font-family: var(--serif); font-size: 38px; color: var(--teal); line-height: 1.1; }
+.card .lab { font-size: 14px; color: var(--text); margin-top: 6px; }
+.mono-sub { font-family: var(--mono); font-size: 10px; color: var(--dim); letter-spacing: .04em; margin-top: 4px; }
+
+.section-label { font-family: var(--mono); font-size: 11px; letter-spacing: .25em; color: var(--dim); margin: 6px 0 8px; }
+.tbl { width: 100%; border-collapse: collapse; margin-bottom: 30px; font-size: 14px; }
+.tbl th { font-family: var(--mono); font-size: 10px; letter-spacing: .15em; color: var(--dim); background: var(--panel); text-align: left; padding: 9px 10px; border: 1px solid var(--rule); font-weight: 400; }
+.tbl td { padding: 11px 10px; border: 1px solid var(--rule); color: var(--text); background: var(--bg); }
+.tbl td.mono { font-family: var(--mono); color: var(--muted); }
+.tbl td.quote { font-style: italic; color: var(--muted); }
+
+.tag { font-family: var(--mono); font-size: 10px; letter-spacing: .18em; padding: 3px 8px; border: 1px solid; }
+.tag.teal { color: var(--teal); border-color: var(--teal); background: var(--teal-bg); }
+.tag.amber { color: var(--amber); border-color: var(--amber); background: #1F1608; }
+.tag.red { color: var(--red); border-color: var(--red-line); background: var(--red-bg); }
+
+.persona-head { display: flex; align-items: center; gap: 14px; margin: 18px 0 10px; padding-top: 16px; border-top: 1px solid var(--rule); }
+.pname { font-family: var(--serif); font-size: 24px; }
+.strip { display: flex; gap: 12px; overflow-x: auto; padding-bottom: 10px; }
+.shot { flex: 0 0 170px; background: var(--panel); border: 1px solid var(--rule); padding: 8px; }
+.shot img { width: 100%; height: 200px; object-fit: cover; object-position: top; display: block; border: 1px solid var(--rule); }
+.shot.end.red { border-color: var(--red); } .shot.end.amber { border-color: var(--amber); } .shot.end.teal { border-color: var(--teal); }
+.thought { font-size: 12px; font-style: italic; color: var(--muted); margin-top: 4px; line-height: 1.35; }
+code { color: var(--teal) !important; background: var(--panel-2) !important; }

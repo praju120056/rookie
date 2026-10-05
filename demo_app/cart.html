@@ -1,0 +1,14 @@
+<!doctype html><html lang="hi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>PizzaPal</title><link rel="stylesheet" href="style.css"></head><body>
+<header><a class="brand" href="index.html">PizzaPal</a><a class="cart" href="cart.html" aria-label="Cart / कार्ट"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#333" stroke-width="2"><path d="M6 7h12l-1 13H7L6 7z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg></a></header>
+<main>
+<h1>Your cart / आपका कार्ट</h1>
+<div id="items"></div>
+<p><b>Total / कुल: <span class="price" id="total"></span></b></p>
+<a class="btn" id="go" href="pay.html">Proceed to payment / भुगतान करें</a>
+</main>
+<script>
+const P={margherita:["Margherita Pizza / मार्गेरिटा पिज़्ज़ा",299],farmhouse:["Farmhouse Pizza / फार्महाउस पिज़्ज़ा",399],paneer:["Paneer Tikka Pizza / पनीर टिक्का पिज़्ज़ा",449]};
+const c=JSON.parse(localStorage.getItem("cart")||"[]");let t=0;
+document.getElementById("items").innerHTML=c.length?c.map(k=>{t+=P[k][1];return '<div class="card"><b>'+P[k][0]+'</b><span class="price">₹'+P[k][1]+'</span></div>'}).join(""):'<p class="sub">Your cart is empty / आपका कार्ट खाली है</p>';
+document.getElementById("total").textContent="₹"+t;if(!c.length)document.getElementById("go").style.display="none";
+</script></body></html>
